@@ -14,3 +14,9 @@ good luck.
 
 ps: Java 1.8 should be in the path.
 
+ps: Recommended configurations (you can copy&past root console)
+    
+    echo "* - nofile 65535" > /etc/security/limits.conf;  \
+    echo "* - memlock unlimited" >> /etc/security/limits.conf;  \
+    echo vm.max_map_count=262144 >> /etc/sysctl.conf
+    
